@@ -10,9 +10,10 @@ var server = http.createServer(app);
 var io = socketio(server);
 
 var port = process.env.PORT || 3000; 
-app.twitSettings = { searchKey: 'javascript'};
+app.twitSettings = { searchKey: bodyParser.bo};
 
-require('./twitter')(app, io); 
+// var name = req.body.name // the request sent here with the search term, pass it to twitter
+require('./twitter')(app); 
 
 
 // LISTEN
