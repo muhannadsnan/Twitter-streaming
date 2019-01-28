@@ -1,0 +1,23 @@
+{
+    "name": "Twitter-Stream",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Muhannad Senan",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "*",
+        "dotenv": "^6.2.0",
+        "express": "*",
+        "jade": "^1.11.0",
+        "npm": "^6.7.0",
+        "socket.io": "^2.2.0",
+        "twitter": "^1.7.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.9"
+    }
+}
