@@ -1,7 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <Tweet/>
+  <div class="TweetList">    
+      <Tweet v-for="tweet in list" :tweet="tweet" :key="tweet.id"/>
   </div>
 </template>
 
@@ -13,14 +12,12 @@ export default {
   components: {
     Tweet
   },
-  props: [],
+  props: ['list'],
   data(){
     return {
-      msg: '',
     }
   },
   mounted(){
-    this.msg = 'this is TweetList'
   }
 }
 </script>

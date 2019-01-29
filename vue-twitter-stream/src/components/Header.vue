@@ -1,21 +1,19 @@
-<template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <img alt="Vue logo" src="../assets/logo.png">
-  </div>
+<template> 
+  <nav class="navbar navbar-dark bg-dark mb-3">
+    <img class="navbar-brand" alt="Vue logo" src="../assets/logo.png">
+    <h3 class="mx-auto my-auto text-info float-left">{{title}}</h3>
+  </nav>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: [],
+  props: ['title'],
   data(){
     return {
-      msg: '',
     }
   },
   mounted(){
-    this.msg = 'this is header'
   }
 }
 </script>
@@ -36,6 +34,6 @@ a {
   color: #42b983;
 }
 img {
-  width: 150px
+  width: 50px
 }
 </style>

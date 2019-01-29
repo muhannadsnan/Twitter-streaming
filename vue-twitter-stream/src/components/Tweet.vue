@@ -1,20 +1,20 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="Tweet card mb-3 text-secondary px-3 pt-3 pb-0">
+    <h5 class="username text-info">{{tweet.user.name}}:</h5>
+    <p class="text-dark">{{tweet.text}}</p>
+    <p class="date text-right pt-2"><small>{{tweet.created_at}}</small></p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Tweet',
-  props: [],
+  props: ['tweet'],
   data(){
     return {
-      msg: '',
     }
   },
   mounted(){
-    this.msg = 'this is Tweet'
   }
 }
 </script>
